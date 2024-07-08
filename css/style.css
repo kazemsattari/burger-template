@@ -1,0 +1,870 @@
+@import "normalize.css";
+/*********************** My CSS ***************************/
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+* {
+    outline: none;
+}
+
+.font10 {
+    font-size: 10px;
+}
+
+.font11 {
+    font-size: 11px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font15 {
+    font-size: 15px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font17 {
+    font-size: 17px;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.font19 {
+    font-size: 19px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font21 {
+    font-size: 21px;
+}
+
+.font22 {
+    font-size: 22px;
+}
+
+.font23 {
+    font-size: 23px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.font25 {
+    font-size: 25px;
+}
+
+.font26 {
+    font-size: 27px;
+}
+
+.font27 {
+    font-size: 27px;
+}
+
+.font28 {
+    font-size: 28px;
+}
+
+.font29 {
+    font-size: 29px;
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.font31 {
+    font-size: 31px;
+}
+
+.font32 {
+    font-size: 32px;
+}
+
+.font33 {
+    font-size: 33px;
+}
+
+.font34 {
+    font-size: 34px;
+}
+
+.font35 {
+    font-size: 35px;
+}
+
+.font36 {
+    font-size: 36px;
+}
+
+.font37 {
+    font-size: 37px;
+}
+
+.font38 {
+    font-size: 38px;
+}
+
+.font39 {
+    font-size: 39px;
+}
+
+.font40 {
+    font-size: 40px;
+}
+
+.font41 {
+    font-size: 41px;
+}
+
+.font42 {
+    font-size: 42px;
+}
+
+.font43 {
+    font-size: 43px;
+}
+
+.font44 {
+    font-size: 44px;
+}
+
+.font45 {
+    font-size: 45px;
+}
+
+.font46 {
+    font-size: 46px;
+}
+
+.font47 {
+    font-size: 47px;
+}
+
+.font48 {
+    font-size: 48px;
+}
+
+.font49 {
+    font-size: 49px;
+}
+
+.font50 {
+    font-size: 50px;
+}
+
+.font60 {
+    font-size: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+    padding: 1.4em;
+    font-size: 1.3em;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: cursive;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+/********************* Start Navigation ***********************/
+header {
+    margin: 30px 0px;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.showing {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2000;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    transition: 1s all;
+    box-shadow: 0 5px 5px #ccc;
+}
+
+.btn-menu {
+    display: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+
+.btn-menu:hover {
+    background-color: #ccc;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+.logo {
+    font-size: 2.5em;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li a:hover {
+    transition: all 0.2s;
+    border-bottom: 3px solid #ffa329;
+}
+
+.responsive-menu {
+    position: absolute;
+    top: 106px;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+.responsive-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************* End Navigation ***********************/
+
+/********************* Start Slide **************************/
+.slide {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    width: 50%;
+    height: 500px;
+}
+
+.box-left {
+    background: linear-gradient(rgba(1, 22, 39, 0.8), rgba(1, 22, 39, 0.9)),
+    url("../img/burger_sandwich_PNG4157.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-right {
+    background-image: linear-gradient(rgba(255, 159, 25, 0.8),
+    rgba(255, 159, 25, 0.9)),
+    url("../img/burger_sandwich_PNG4158.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-box1 h2 {
+    color: #FFA329;
+}
+
+.slide-box1 p {
+    color: #fff;
+}
+
+.slide-box2 div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.slide-box2 h2 {
+    color: #fff;
+}
+
+.slide-box2 > div > a {
+    background-color: #fff;
+    padding: 7px 15px;
+    margin-left: 10px;
+    transition: 0.3s all;
+}
+
+.slide-box2 > div > a:hover {
+    box-shadow: 5px 5px 10px #ef6c00;
+}
+
+.slide-box2 > div > p {
+    font-weight: bold;
+}
+
+.slide-box2 > div > a > i {
+    color: #ef6c00;
+}
+
+/********************* End Slide ***********************/
+
+/********************* Start Food ***********************/
+.food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+
+.item-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 16em;
+    min-height: 16em;
+    margin-bottom: 50px;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.item-food h2 {
+    color: #ffa329;
+}
+
+.item-food p {
+    margin: 0;
+}
+
+.item-food img {
+    background-position: center;
+    background-size: cover;
+    border-radius: 8em;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.food .item-food .price {
+    width: 95%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #e1e1e1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/********************* End Food ***********************/
+/********************* Start price ***********************/
+.banner {
+    padding-top: 60px;
+    width: 100%;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namefood > ul > li,
+.pricefood ul > li {
+    padding: 8px;
+}
+
+.namefood > ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.pricefood > ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.namefood,
+.pricefood {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_box {
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.p_box .banner-content1 {
+    width: 45%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.p_box .banner-content2 {
+    width: 30%;
+    height: auto;
+    background: transparent;
+    border: 3px solid #FFA427;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 30px 0;
+}
+
+.p_box .banner-content1 p {
+    animation: anim 2s infinite ease-in-out alternate;
+}
+
+/********************* End price ***********************/
+/********************* Start Photoes ****************/
+.photoes {
+    padding-top: 60px;
+}
+
+.food .title,
+.photoes .title,
+.contanct-us .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.food .title,
+.photoes .title h3,
+.contanct-us .title h3 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container .Box {
+    width: 33%;
+    height: 300px;
+    margin: 50px 1px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.5s ease;
+}
+
+.container .Box:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px #455a64;
+}
+
+.Box .Up {
+    width: 100%;
+    height: 60%;
+    border-bottom: 4px solid #ff9f19;
+}
+
+.Box .Up img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.Down {
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+
+.Box .Down .downRight {
+    width: 50%;
+    height: 100%;
+
+    transition: border 0.5s ease;
+}
+
+.Box .Down .downLeft {
+    width: 50%;
+    height: 100%;
+
+    transition: border 0.5s ease;
+}
+
+.Down .downRight img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.Down .downLeft img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+/********************* End Photoes *********************/
+/********************* Start Contact-us ****************/
+.contanct-us {
+    padding-top: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.contactUs-box .c-form {
+    width: 30%;
+    height: auto;
+}
+
+.contactUs-box .c-form form {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+.c-form > p {
+    color: #fff;
+    width: 100%;
+}
+
+.c-form form input {
+    border: none;
+    outline: none;
+    width: 100% !important;
+    margin-bottom: 8px;
+    padding: 8px 8px;
+    box-shadow: 0 0 10px #b0bec5 inset;
+}
+
+.c-form textarea {
+    width: 100% !important;
+    resize: none !important;
+    padding: 8px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.c-form form input[type="button"] {
+    background-color: #ffa427;
+    color: #fff;
+    box-shadow: none !important;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.c-form p {
+    margin-bottom: 20px;
+}
+
+.c-map {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-map img {
+    width: 70%;
+}
+
+.c-map .address,
+.c-map .call {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.c-map .call > span {
+    color: #ffa427 !important;
+}
+
+/******************************************/
+
+.contanct-us .contactUs-bottom p {
+    color: #fff;
+    margin: 0;
+}
+
+.contanct-us .contactUs-bottom p > span {
+    color: #FFA329;
+}
+
+.contanct-us .contactUs-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 400px;
+    background-color: #0e1e2e;
+    margin-top: 50px;
+}
+
+.contanct-us .contactUs-bottom {
+    width: 100%;
+    height: 50px;
+    background-color: #050b10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********************Arrow Up***********************/
+.arrowup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+
+.arrowup:hover {
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+}
+
+.arrowup::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: 5px;
+    background-color: #ef6c00;
+    z-index: 1000;
+    border-radius: 2px;
+    opacity: 0.9;
+    transform: rotate(48deg);
+    -webkit-transform: rotate(48deg);
+    -moz-transform: rotate(48deg);
+    -ms-transform: rotate(48deg);
+    -o-transform: rotate(48deg);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.arrowup::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 5px;
+    width: 25px;
+    height: 5px;
+    background-color: #ef6c00;
+    z-index: 1000;
+    border-radius: 2px;
+    opacity: 0.9;
+    transform: rotate(-48deg);
+    -webkit-transform: rotate(-48deg);
+    -moz-transform: rotate(-48deg);
+    -ms-transform: rotate(-48deg);
+    -o-transform: rotate(-48deg);
+}
+
+/********************* End Contact-us ****************/
+@keyframes anim {
+    0% {
+        color: #E65100;
+    }
+    25% {
+        color: #AB47BC;
+    }
+    50% {
+        color: #D81B60;
+    }
+    75% {
+        color: #fff;
+    }
+    100% {
+        color: #26C6DA;
+    }
+}
+
+/********************* Start Media ***********************/
+
+@media screen and (max-width: 1060px) {
+    .responsive-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-menu {
+        display: flex;
+    }
+
+    .showing {
+        position: unset;
+    }
+}
+@media (max-width: 992px) {
+    .slide .box{
+        text-align: center;
+    }
+    .box-right .slide-box2 > div{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container .Box {
+        width: 60%;
+    }
+
+    .box-left,
+    .box-right {
+        width: 100%;
+    }
+
+    .p_box {
+        flex-direction: column;
+    }
+
+    .banner .banner-content1, .banner .banner-content2 {
+        width: 80%;
+    }
+
+    .c-map {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-map img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .container .Box {
+        width: 80%;
+    }
+
+    .container .Box {
+        height: 250px;
+    }
+
+    .banner .banner-content1 p {
+        font-size: 45px !important;
+    }
+
+    .banner .banner-content1, .banner .banner-content2 {
+        width: 80%;
+    }
+
+    .contactUs-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactUs-box .c-form,
+    .contactUs-box .c-map {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+}
+
+/********************* End Media ***********************/
